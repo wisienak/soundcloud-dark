@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 header {
-  padding: 30px 0px;
-  position: relative !important;
-  height: auto !important;
-  display: flex;
-  justify-content: center !important;
-  align-items: center !important;
+
 }
 
 .sc-classic .show .header__logo {
@@ -21,9 +16,24 @@ a {
   transition: all .3s linear;
 }
 
+/* Header */
+
+.sc-classic .header {
+  font-family: 'figtree', sans-serif !important;
+  background-color: transparent !important;
+}
+
+header {
+  margin-top: 10px;
+}
+
+/* Page */
+.l-container.l-content, .sc-classic .l-container.l-content {
+  padding-top: 100px !important;
+}
+
 a:hover {
   color: #38d;
-  filter: brightness(50%) !important;
   transition: all .3s linear;
 }
 
@@ -33,7 +43,7 @@ a.sc-link-light {
 }
 
 a.sc-link-light:hover {
-  color: rgba(150, 150, 150, 1) !important;
+  color: rgba(100, 100, 100, 1) !important;
   transition: all .3s linear;
 }
 
@@ -102,11 +112,25 @@ a.sc-link-light:hover {
   border: 0 !important;
 }
 
-.sc-button-medium.sc-button-message:before, .sc-button-medium.sc-button-more:before {
+/* Filtered icons colour */
+
+/* Repost icon (profile view) */
+.sc-button-medium.sc-button-message:before, .sc-button-medium.sc-button-more:before,
+.sc-button-small.sc-button-repost:before /* not reposted */
+
+{
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(28deg) brightness(102%) contrast(101%);
 }
 
 .sc-button-active.sc-button-medium.sc-button-more:before, .sc-button-selected.sc-button-medium.sc-button-more:before {
+  filter: none !important;
+}
+
+/* Filter reset for orange icons */
+
+/* Repost icon (profile view) */
+.sc-button-small.sc-button-selected.sc-button-repost:before
+{
   filter: none !important;
 }
 
@@ -179,6 +203,10 @@ a.sc-link-light:hover {
   color: rgba(120, 120, 120, 1) !important;
 }
 
+.sc-classic .image__whiteOutline .image__full {
+    border: 0 !important;
+}
+
 /* ========================================== */
 
 
@@ -236,11 +264,12 @@ a.sc-link-light:hover {
 
 .headerMenu__link {
     border: 0 !important;
-    color: rgba(200, 200, 200, 1) !important;
+    color: rgba(160, 160, 160, 1) !important;
 }
 
 .headerMenu__link:hover {
   background-color: rgba(40, 40, 40, 1) !important;
+  color: rgba(120, 120, 120, 1) !important;
 }
 
 .sc-classic .header__navMenu>li>a {
@@ -301,6 +330,7 @@ a.sc-link-light:hover {
 
 .commentBadge__title a:hover {
   color: rgba(100, 100, 100, 1) !important;
+  filter: brightness(100%) !important;
 }
 
 .sc-classic .commentBadge:hover .commentBadge__title a {
@@ -414,7 +444,7 @@ a.sidebarHeader:hover {
   -webkit-box-shadow: 0px 0px 24px -15px rgba(0, 0, 0, 1);
 -moz-box-shadow: 0px 0px 24px -15px rgba(0, 0, 0, 1);
 box-shadow: 0px 0px 24px -15px rgba(0, 0, 0, 1);
-  background-color: rgba(27, 27, 27, 0.7);
+  background-color: rgba(27, 27, 27, 1);
 }
 
 .dropbar__content {
@@ -693,8 +723,60 @@ box-shadow: 0px 0px 24px -15px rgba(0, 0, 0, 1);
 
 /* Notification */
 
-.gritter-item-wrapper {
+.sc-classic .gritter-item-wrapper {
+    background-color: rgba(31, 31, 31, 1) !important;
+    color: rgba(200, 200, 200, 1) !important;
+    box-shadow: 0 !important;
+    
+    padding: 3px 5px;
+    border: 0;
+}
 
+.sc-classic .gritter-image {
+    position: relative;
+}
+
+.sc-classic .gritter-item {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ========================================== */
+
+/* Dropdown content */
+
+.sc-classic .dropdownContent__container {
+  background-color: rgba(31, 31, 31, 1) !important;
+  border: 0 !important;
+  color: rgba(180, 180, 180, 1) !important;
+  border-radius: 15px;
+}
+
+.sc-classic .dropdownContent__header {
+  border: 0 !important;
+}
+
+.sc-classic .dropdownContent__listItem {
+  border: 0 !important;
+}
+
+.sc-classic .dropdownContent__footerLink {
+  color: rgba(180, 180, 180, 1) !important;
+}
+
+.sc-classic .dropdownContent__main {
+  border: 0 !important;
+}
+
+/* ========================================== */
+
+/* Main page items */
+
+.playableTile__actionWrapper button:before {
+  filter: invert(88%) sepia(0%) saturate(0%) hue-rotate(323deg) brightness(91%) contrast(93%) !important;
 }
 
 /* ========================================== */
