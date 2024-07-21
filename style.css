@@ -112,6 +112,19 @@ a.sc-link-light:hover {
   border: 0 !important;
 }
 
+.soundContext__usernameLink {
+  color: rgba(230, 230, 230, 1) !important;
+}
+
+.soundContext__usernameLink:hover {
+  color: rgba(165, 165, 165, 1) !important;
+}
+
+.waveform__emptyMessage {
+  text-shadow: none !important;
+  color: rgba(165, 165, 165, 1);
+}
+
 /* Filtered icons colour */
 
 /* Repost icon (profile view) */
@@ -122,7 +135,16 @@ a.sc-link-light:hover {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(28deg) brightness(102%) contrast(101%);
 }
 
-.sc-button-active.sc-button-medium.sc-button-more:before, .sc-button-selected.sc-button-medium.sc-button-more:before {
+.sc-button-small.sc-button-follow:before /* follow icon */
+
+{
+  filter: invert(84%) sepia(9%) saturate(11%) hue-rotate(315deg) brightness(94%) contrast(91%);
+}
+
+.sc-button-active.sc-button-medium.sc-button-more:before,
+.sc-button-selected.sc-button-medium.sc-button-more:before,
+.playableTile__actionWrapper button:before /* /discover (playlist controls) */
+{
   filter: none !important;
 }
 
@@ -158,10 +180,6 @@ a.sc-link-light:hover {
 
 .usersList .userBadge__username a {
   color: rgba(180, 180, 180, 1) !important;
-}
-
-.sc-button-small.sc-button-follow:before {
-  background-image: url(https://i.imgur.com/3Yy0NZj.png) !important;
 }
 
 .sc-button-small.sc-button-selected.sc-button-follow.sc-button-icon-light:before, .sc-button-small.sc-button-selected.sc-button-follow:before {
@@ -207,6 +225,10 @@ a.sc-link-light:hover {
     border: 0 !important;
 }
 
+.sc-classic .header__logoLink:focus {
+  background-color: transparent !important;
+}
+
 /* ========================================== */
 
 
@@ -226,8 +248,46 @@ a.sc-link-light:hover {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(28deg) brightness(102%) contrast(101%);
 }
 
+.sc-classic .playButton.m-stretch {
+  border-radius: 5px !important;
+}
+
 .userBadge__usernameLink {
-  color: rgba(240, 240, 240, 1) !important;
+  color: rgba(230, 230, 230, 1) !important;
+  transition: all .3s linear;
+}
+
+button.tileGallery__sliderButton {
+  background-color: rgba(45, 45, 45, 1) !important;
+  border-color: rgba(34, 34, 34, 1) !important;
+}
+
+button.tileGallery__sliderButton:hover {
+  background-color: rgba(42, 42, 42, 1) !important;
+  border-color: rgba(31, 31, 31, 1) !important;
+}
+
+button.tileGallery__sliderButton:after {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(28deg) brightness(102%) contrast(101%);
+}
+
+.sc-classic .mixedSelectionModule {
+  border: rgba(40, 40, 40, 1) !important;
+}
+
+a.playableTile__heading {
+  color: rgba(230, 230, 230, 1);
+  transition: all .3s linear;
+}
+
+a.playableTile__heading:hover {
+  color: rgba(165, 165, 165, 1);
+  transition: all .3s linear;
+}
+
+.userBadge__usernameLink:hover {
+  color: rgba(165, 165, 165, 1) !important;
+  transition: all .3s linear;
 }
 
 .spotlight__upsellCTA button {
@@ -337,6 +397,44 @@ a.sc-link-light:hover {
   color: rgba(100, 100, 100, 1) !important;
 }
 
+body.sc-classic {
+  background-color: rgba(45, 45, 45, 1) !important;
+}
+
+.insightsSidebarModule__userName, .insightsSidebarModule__title {
+  color: rgba(230, 230, 230, 1) !important;
+}
+
+.sc-classic .artistShortcutTile__badge {
+  border: 0;
+}
+
+a.userBadgeListItem__heading {
+  color: rgba(230, 230, 230, 1);
+}
+
+.artistShortcutTile__username {
+  color: rgba(230, 230, 230, 1);
+  transition: all .3s linear;
+}
+
+.artistShortcutTile__username:hover {
+  color: rgba(165, 165, 165, 1);
+  transition: all .3s linear;
+}
+
+a.userBadgeListItem__heading:hover {
+  color: rgba(170, 170, 170, 1);
+}
+
+.insightsSidebarModule__button {
+  background-color: rgba(45, 45, 45, 1) !important;
+}
+
+.insightsSidebarModule__button:hover {
+  background-color: #f50 !important;
+}
+
 #app {
     background-color: rgba(45, 45, 45, 1);
   color: white !important;
@@ -421,9 +519,81 @@ a.sidebarHeader:hover {
   border-radius: 5px;
 }
 
+.sc-classic .collection.m-overview .collection__section:not(:last-child) {
+  border-color: rgba(40, 40, 40, 1) !important;
+}
+
+.sc-button-dropdown:after {
+  border-right-color: rgba(165, 165, 165, 1);
+  border-bottom-color: rgba(165, 165, 165, 1);
+}
+
 .sc-button-small.sc-button-icon:not(.sc-button-stretch-icon):before {
   left: 3px;
   top: 1px;
+}
+
+input.textfield__input {
+  background-color: rgba(35, 35, 35, 1) !important;
+  border: 0;
+  color: rgba(165, 165, 165, 1);
+}
+
+.sc-classic .textfield__clear {
+  background: transparent !important;
+  border: 0 !important;
+}
+
+.sc-classic .textfield__clear::before,.sc-classic .textfield__clear::after {
+  border-color: rgba(200, 200, 200, 1);
+}
+
+.sc-button-dropdown:not(.sc-button-disabled):not(:disabled) {
+  background-color: rgba(31, 31, 31, 1) !important;
+  color: rgba(165, 165, 165, 1) !important;
+  border: 0;
+  transition: all 0.3s linear;
+}
+
+.playHistory .playHistory__top button {
+  background-color: rgba(34, 34, 34, 1);
+  color: rgba(200, 200, 200, 1);
+  transition: all 0.3s linear;
+  border: 0;
+}
+
+.playHistory .playHistory__top button:hover {
+  color: rgba(165, 165, 165, 1);
+  transition: all 0.3s linear;
+}
+
+.sc-border-light-top {
+  border-color: rgba(40, 40, 40, 1);
+}
+
+.sc-classic .linkMenu__activeItem, .sc-classic .linkMenu__activeItem>a, .sc-classic .linkMenu__item:hover, .sc-classic .linkMenu__item>a:hover {
+  color: rgba(230, 230, 230, 1) !important;
+}
+
+.sc-classic .linkMenu__link {
+  color: rgba;
+}
+
+.sc-classic .linkMenu {
+  background-color: rgba(29, 29, 29, 1) !important;
+}
+
+.sc-button-dropdown:not(.sc-button-disabled):not(:disabled):hover {
+  transition: all 0.3s linear;
+}
+
+.sc-classic .audibleTilePlaceholder:before {
+  border: 0;
+}
+
+.sc-classic .readMoreTile__countWrapper {
+  background-color: rgba(35, 35, 35, 1) !important;
+  color: rgba(165, 165, 165, 1) !important;
 }
 
 .dialog__arrow {
