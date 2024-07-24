@@ -10,3 +10,6 @@ Chrome extension which provides dark theme for soundcloud and few features
 - discover
 - feed
 - library (including all sub categories like playlists, history etc.)
+- track view
+- search
+- sets view

@@ -129,14 +129,19 @@ a.sc-link-light:hover {
 
 /* Repost icon (profile view) */
 .sc-button-medium.sc-button-message:before, .sc-button-medium.sc-button-more:before,
-.sc-button-small.sc-button-repost:before /* not reposted */
-
+.sc-button-small.sc-button-repost:before, /* not reposted */
+.sc-button-medium.sc-button-copylink:before
 {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(28deg) brightness(102%) contrast(101%);
 }
 
-.sc-button-small.sc-button-follow:before /* follow icon */
+.sc-button-small.sc-button-follow:before, /* follow icon */
+.sc-classic .g-nav-item-sounds>.g-nav-link,
+.sc-classic .g-nav-item-people>.g-nav-link,
+.sc-classic .g-nav-item-sets>.g-nav-link,
+.sc-classic .g-nav-item-sets>.g-nav-link,
 
+.sc-button-medium.sc-button-like:before,
 {
   filter: invert(84%) sepia(9%) saturate(11%) hue-rotate(315deg) brightness(94%) contrast(91%);
 }
@@ -227,6 +232,68 @@ a.sc-link-light:hover {
 
 .sc-classic .header__logoLink:focus {
   background-color: transparent !important;
+}
+
+.sc-classic .trackItem.active, .sc-classic .trackItem.hover {
+  background-color: rgba(31, 31, 31, 1);
+}
+
+.sc-classic .searchOptions__navigationItem.active {
+  background-color: rgba(31, 31, 31, 1);
+}
+
+.sc-classic .trackItem:not(.m-disabled).active .trackItem__additional, .sc-classic .trackItem:not(.m-disabled).hover .trackItem__additional {
+  background: transparent;
+}
+
+.trackItem__actions .soundActions .sc-button-group {
+  background-color: transparent !important;
+}
+
+.sc-classic .g-nav-item.active>.g-nav-link {
+  color: rgba(200, 200, 200, 1) !important;
+}
+
+.madeForUsername a {
+  color: rgba(165, 165, 165, 1);
+}
+
+.madeForUsername a:hover {
+  color: rgba(100, 100, 100, 1);
+}
+
+.userItem__title a {
+  color: rgba(200, 200, 200, 1);
+}
+
+.sc-classic .trackItem:not(.m-disabled).active .trackItem__content, .sc-classic .trackItem:not(.m-disabled).active .trackItem__trackTitle {
+  color: rgba(200, 200, 200, 1);
+}
+
+.systemPlaylistDetails__button button.sc-button-like {
+  background-color: rgba(31, 31, 31, 1);
+  color: rgba(180, 180, 180, 1);
+  border: 0;
+}
+
+.sc-classic .trackItem:not(.m-disabled).active .trackItem__trackTitle:focus, .sc-classic .trackItem:not(.m-disabled).active .trackItem__trackTitle:hover {
+  color: rgba(170, 170, 170, 1);
+}
+
+.trackItem__content a.trackItem__trackTitle {
+  color: rgba(165, 165, 165, 1);
+}
+
+.userItem__title a:hover {
+  color: rgba(165, 165, 165, 1);
+}
+
+.sc-classic .searchOptions__navigationItem.active:after {
+  border-left-color: rgba(31, 31, 31, 1);
+}
+
+.sc-classic .g-nav-item.active>.g-nav-link {
+  text-shadow: none !important;
 }
 
 /* ========================================== */
@@ -579,16 +646,155 @@ input.textfield__input {
   color: rgba;
 }
 
+.webiRedirectionHeader {
+  background-color: rgba(33, 33, 33, 1) !important;
+}
+
+.webiRedirectionHeader__title, .webiRedirectionHeader__copy {
+  color: rgba(200, 200, 200, 1) !important;
+}
+
 .sc-classic .linkMenu {
   background-color: rgba(29, 29, 29, 1) !important;
+}
+
+.webiRedirectionHeader__new {
+  background-color: rgba(43, 43, 43, 1) !important;
 }
 
 .sc-button-dropdown:not(.sc-button-disabled):not(:disabled):hover {
   transition: all 0.3s linear;
 }
 
+.webiRedirectionHeader__button {
+  background-color: rgba(45, 45, 45, 1) !important;
+  color: rgba(200, 200, 200, 1);
+}
+
+.webiRedirectionHeader__button:hover {
+  background-color: rgba(40, 40, 40, 1) !important;
+  color: rgba(180, 180, 180, 1);
+}
+
+.quotaMeterWrapper {
+  border-radius: 5px;
+  background-color: rgba(33, 33, 33, 1) !important;
+  border: 0 !important;
+}
+
+.uploadMain__chooserContainer {
+  border-radius: 5px;
+  background-color: rgba(33, 33, 33, 1) !important;
+  border: 0 !important;
+}
+
+.localeSelectorContent__wrapper li button:disabled {
+  color: rgba(50, 50, 50, 1) !important;
+}
+
+.masteringLanding__upsellButton {
+  background-color: transparent !important;
+  transition: all 0.3 linear !important;
+}
+
+.masteringLanding__upsellButton:hover {
+  background-color: #f50 !important;
+  color: white !important;
+  transition: all 0.3 linear !important;
+}
+
+.localeSelectorContent__wrapper li button {
+  color: rgba(100, 100, 100, 1) !important;
+  transition: all 0.3s linear;
+}
+
+.localeSelector__cancel {
+  color: rgba(165, 165, 165, 1) !important;
+  transition: all 0.3 linear !important;
+}
+
+.localeSelectorContent__wrapper li button:hover {
+  color: rgba(75, 75, 75, 1) !important;
+  transition: all 0.3s linear;
+}
+
+.uploadMain__foot {
+  border-radius: 5px;
+  background-color: rgba(33, 33, 33, 1) !important;
+  border: 0 !important;
+}
+
+.quotaMeter__lightLine, .quotaMeter__upsellText {
+  color: rgba(200, 200, 200, 1) !important;
+}
+
+.sc-classic .g-modal-title-h1 {
+  border: 0;
+}
+
+.sc-classic .moreActions__button:not(:disabled), .sc-classic .moreActions__link {
+  background-color: rgba(42, 42, 42, 1) !important;
+  color: rgba(200, 200, 200, 1);
+}
+
+.localeSelectorContent {
+  background-color: rgba(34, 34, 34, 1) !important;
+  color: rgba(200, 200, 200, 1);
+  border-radius: 5px;
+}
+
+.sc-classic .modal.modalWhiteout {
+  background-color: rgba(27, 27, 27, .8);
+}
+
+.localeSelector_language {
+  color: rgba(100, 100, 100, 1);
+}
+
+.chooseFiles__button {
+  background-color: transparent;
+  color: #f50;
+  transition: all 0.3s linear;
+}
+
+.chooseFiles__button:hover {
+  background-color: #f50;
+  color: white;
+  transition: all 0.3s linear;
+}
+
+.sc-background-dark {
+  background-color: rgba(180, 180, 180, 1) !important;
+}
+
 .sc-classic .audibleTilePlaceholder:before {
   border: 0;
+}
+
+.quotaMeter__upsellButton .creatorSubscriptionsButton {
+  background-color: rgba(31, 31, 31, 1) !important;
+}
+
+.quotaMeter__upsellButton .creatorSubscriptionsButton:hover {
+  background-color: #f50 !important;
+  color: white;
+}
+
+.sc-classic .l-listen-wrapper .l-about-rows {
+  border-color: rgba(40, 40, 40, 1) !important;
+}
+
+.sc-classic .listenEngagement {
+  border: 0;
+  box-shadow: none;
+}
+
+.sc-classic .l-listen-wrapper .l-about-rows {
+  
+}
+
+.sc-classic .uploadButton.selected {
+  background-color: transparent !important;
 }
 
 .sc-classic .readMoreTile__countWrapper {
@@ -697,6 +903,22 @@ box-shadow: 0px 0px 24px -15px rgba(0, 0, 0, 1);
 
 .sc-classic .skipControl__next {
   background-image: url(https://i.imgur.com/fiTc1Kx.png);
+}
+
+.artistConnectItem {
+  border: 0;
+}
+
+.sc-classic .g-nav-item>.g-nav-link {
+  color: rgba(75, 75, 75, 1);
+}
+
+.sc-classic .searchTitle__text {
+  border: 0;
+}
+
+.sc-classic .searchTitle {
+  background-color: rgba(45, 45, 45, 1) !important;
 }
 
 .volume__sliderWrapper {
