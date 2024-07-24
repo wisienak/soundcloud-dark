@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Dark for SoundCloud",
+    "version": "1.0",
+    "description": "Injects custom dark css into SoundCloud page.",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://soundcloud.com/*"],
+        "css": ["css/style.css"]
+      }
+    ]
+}
